@@ -30,6 +30,7 @@ gem 'seed-fu', '~> 2.3'
 
 # Authentication
 gem 'devise'
+gem 'kaminari', '~> 0.17.0'
 
 group :development, :test do
   gem 'awesome_print'

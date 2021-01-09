@@ -9,6 +9,7 @@ class TeamsController < ApplicationController
   def show
     @working_team = @team
     change_keep_team(current_user, @team)
+    @assign_members = @team.assigns.page(params[:page]).per(3)
   end
 
   def new
