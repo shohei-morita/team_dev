@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :videos
   root 'statics#top'
   get :dashboard, to: 'teams#dashboard'
 
